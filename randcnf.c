@@ -69,7 +69,7 @@ int main(int argc, char** argv){
   // outer loop is per formula
   for(which_formula = 0; which_formula < num_formulas; which_formula++)
     {
-      sprintf(filename, "randomcnf-%u", which_formula + 1);
+      sprintf(filename, "random-%u.cnf", which_formula + 1);
       
       //open file
       if ((output = (FILE *)fopen(filename,"w")) == NULL)
